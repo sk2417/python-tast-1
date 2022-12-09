@@ -1,0 +1,15 @@
+files={
+    "py":"python",
+    "docx":"word",
+    "txt":"text file",
+    "csv":"comma seperated values",
+    "jpg":"image",
+    "pdf":"pdf file",
+    "pptx":"power point file",
+    "c":"c file",
+    "cpp":"c++ file"
+    }
+filename=input("Enter the filename:")
+for i in files.keys():
+    if (filename.split("."))[1]==i:
+        print(files[i])
